@@ -35,6 +35,60 @@ function pageLoad() {
 
   // 🔥🔥🔥 YOUR CODE GOES HERE 🔥🔥🔥
   console.log(database)
+  
+  
+  database.products.length
+  console.log(products)
+  
+    numberOfProducts = database.products.length
+    console.log(numberOfProducts)
+
+    let promo1 = database.promotions[getRandomInt(database.promotions.length)-1]
+    let promo2 = database.promotions[getRandomInt(database.promotions.length)-1]
+    let promo3 = database.promotions[getRandomInt(database.promotions.length)-1]
+
+   promotion1Description = promo1.description
+   promotion2Description = promo2.description
+   promotion3Description = promo3.description
+
+   if (promo1.type == 'discount') {
+    promotion1Icon = '🤑'
+  } else if (promo1.type == 'shipping') {
+    promotion1Icon = '🚛'
+  } else {
+    promotion1Icon = '🎰'
+  }
+
+  if (promo2.type == 'discount') {
+    promotion2Icon = '🤑'
+  } else if (promo2.type == 'shipping') {
+    promotion2Icon = '🚛'
+  } else {
+    promotion2Icon = '🎰'
+  }
+
+  if (promo3.type == 'discount') {
+    promotion3Icon = '🤑'
+  } else if (promo3.type == 'shipping') {
+    promotion3Icon = '🚛'
+  } else {
+    promotion3Icon = '🎰'
+  }
+    // promotion1Description = 'free shipping'
+    // promotion2Description = '10% Discount'
+    // promotion3Description = 'Raffle'
+
+    // let x = getRandomInt(6)
+    // console.log(x)
+
+    // if ()
+    // promotion1Icon = '🚛'
+    // promotion2Icon = '🤑'
+    // promotion3Icon = '🎰'
+
+    // console.log(products[0])
+
+    // products[0].promotion1Description = 
 
   //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
 }
